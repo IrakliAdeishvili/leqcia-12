@@ -37,6 +37,25 @@ header{
             }
         }
         }
-      
+        .burger_menu{
+            display: none;
+        }
+
+
     }
 }
+
+
+@media(max-width: 768px){
+   header {
+    .header_content{
+        margin-top: 20px;
+        .nav_links{
+            display: none;
+        }
+        .burger_menu{
+            display: block;
+        }
+    }
+    } 
+ }

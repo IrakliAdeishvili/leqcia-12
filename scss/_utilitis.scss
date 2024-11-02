@@ -9,3 +9,10 @@
 body{
     font-family: "Poppins", sans-serif;
 }
+
+
+@media(max-width: 768px){
+   .conteiner{
+    padding: 0px 16px;
+   } 
+}
