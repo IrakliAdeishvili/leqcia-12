@@ -1,0 +1,42 @@
+header{
+    min-height: 59px;
+
+    .header_content{
+        border: 2px solid green;
+        height: 100%;
+        margin-top: 41px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            width: 60px;
+            height: auto;
+
+        }
+        .nav_links{
+            display: flex;
+            align-items: center;
+            column-gap: 51px;
+         nav{
+          .nav_list{
+            display: flex;
+            column-gap: 67px;
+          }  
+        }
+        .social_icons{
+            display: flex;
+            column-gap: 21px;
+
+            li{
+                transition: 1s ease;
+                
+                &:hover{
+                    transform: scale(1.3);
+                }
+            }
+        }
+        }
+      
+    }
+}
