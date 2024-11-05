@@ -1,0 +1,43 @@
+.Skills{
+    margin: 150px auto 150px auto;
+
+    .skills_contetnt{
+       .text_wraper{
+        text-align: center;
+        margin-bottom: 100px;
+
+        .main_title{
+            font-size: 40px;
+            line-height: 70px;
+            font-weight: bold;
+            color: $primeriColor;
+        }
+        .main_desc{
+            color: $seconderyColor;
+            font-size: 18px;
+            line-height: 28px;
+        }
+       } 
+       
+       .skills_list{
+        @include dFlex(space-between,start);
+        
+       }
+    }
+}
+
+@media(max-width: 500px){
+    .Skills{
+        margin: 70px auto 70px auto;
+
+        .skills_contetnt{
+            .skills_list{
+                @include dFlex(start,center,column);
+                row-gap: 20px;
+            }
+            
+        }
+      
+    }
+
+}

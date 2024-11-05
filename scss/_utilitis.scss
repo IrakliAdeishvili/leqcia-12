@@ -10,6 +10,15 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
+//mixsins
+@mixin dFlex($justifyContent, $alignItems, $flexDirection:row, $colgap:0){
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-direction:$flexDirection;
+    column-gap: $colgap;
+
+}
 
 @media(max-width: 768px){
    .conteiner{
