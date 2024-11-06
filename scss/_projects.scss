@@ -1,0 +1,66 @@
+.projects{
+    .projects_contetnt{
+        margin-bottom: 100px;
+        .text_wraper{
+            text-align: center;
+            margin-bottom: 80px;
+
+           .projects_title{
+            font-size: 40px;
+            line-height: 70px;
+            font-weight: bold;
+            color: $primeriColor;
+           } 
+           .projects_desc{
+            color: $seconderyColor;
+            font-size: 18px;
+            line-height: 28px;
+           }
+            
+        }
+        .projects_lists{
+            
+            @include dFlex(space-between,start);
+
+            .card{
+                height: 567px;
+                max-width: 373px; 
+                width: 100%;
+                border: 1px solid green;
+                border-radius: 20px;
+
+                .card_imgs{
+                    height: 260px;
+                    width: 100%;
+                    border: 1px solid red;
+                    border-radius: 20px 20px 0px 0px;
+                    background-image: url("../images/projects-img.png");
+                }
+                .card_text{
+                    width: 100%;
+                    padding: 27px 31px 25px 28px;
+
+                    h3{
+                        font-weight: 500px;
+                        font-size:28px;
+                        line-height: 26px;
+                    }
+                    .card_desc{
+                        margin: 17px 0px 12px 0px;
+                        line-height: 26px;
+                        font-weight: 300;
+                        color: #666666;
+                    }
+                    .card_links{
+                        @include dFlex(space-between,start);
+                        margin-top: 21px;
+
+                        .live_previev, .github_code{
+                            @include dFlex(start,center,row,12px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
